@@ -78,7 +78,6 @@ fn get_level_introduction(level: &Level) -> Result<&SubLevel, String>{
 }
 
 fn play_ground(level: Level) -> Result<(), Box<dyn Error>> {
-
     println!("{}", level.title);
     let mut sub = get_level_introduction(&level)?;
 
