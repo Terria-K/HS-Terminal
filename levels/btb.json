@@ -1,0 +1,42 @@
+{
+  "title": "Breaking The Bank",
+  "introduce": "b-01",
+  "sub_levels": {
+    "b-01": {
+      "type": "Single",
+      "message": "You are in the middle of nowhere, and the bank is near you, you are going to break in, what tools you want to use?",
+      "choices": [
+        {
+          "type": "Failure",
+          "name": "Shovel",
+          "message": "Never dig straight down"
+        },
+        {
+          "type": "Failure",
+          "name": "Explosives",
+          "message": "Handle with care"
+        },
+        {
+          "type": "Failure",
+          "name": "Teleporter",
+          "message": "It's emergent technology. I'm sure it will get better!"
+        },
+        {
+          "type": "Failure",
+          "name": "Laser",
+          "message": "Open Sesame."
+        },
+        {
+          "type": "Failure",
+          "name": "Wrecking Ball",
+          "message": "There's no construction scheduled for today."
+        },
+        {
+          "type": "Success",
+          "name": "Disguise",
+          "route_to": "completed"
+        }
+      ]
+    }
+  }
+}

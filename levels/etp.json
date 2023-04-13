@@ -1,0 +1,112 @@
+{
+  "title": "Escaping the Prison",
+  "introduce": "e-start",
+  "sub_levels": {
+    "e-start": {
+      "type": "Single",
+      "message": "You are trapped in the prison, two guards laughing at you, you found some tools to escape while those two didn't know, what tools you are going to use?",
+      "choices": [
+        {
+          "type": "Success",
+          "name": "File",
+          "route_to": "e-file1"
+        },
+        {
+          "type": "Failure",
+          "name": "NrG Drink",
+          "message": "NrG - Side Effects include: Nausea, Headaches, Rapid Heartrate and possibilities of Stroke and/or Heart Attack. Hmm... Well that's good to know"
+        },
+        {
+          "type": "Failure",
+          "name": "Teleporter",
+          "message": "You just can't seem to get the hang of that thing can you?"
+        },
+        {
+          "type": "Failure",
+          "name": "Rocket Launcher",
+          "message": "Uh... Way to aim buddy..."
+        },
+        {
+          "type": "Success",
+          "name": "Cellphone",
+          "route_to": ""
+        }
+      ]
+    },
+    "e-file1": {
+      "type": "Single",
+      "message": "You have a file now, where you are going to use it?",
+      "choices": [
+        {
+          "type": "Success",
+          "name": "Cell Door",
+          "route_to": "e-file2"
+        },
+        {
+          "type": "Failure",
+          "name": "Window",
+          "message": "Protip: Look before you leap."
+        }
+      ]
+    },
+    "e-file2": {
+      "type": "Single",
+      "message": "You break the cell bars, two guards saw you and you hide to the door, what you're going to do?",
+      "choices": [
+        {
+          "type": "Failure",
+          "name": "Belt of Grenades",
+          "message": "*Grenade bounces onto you* Uhh... I don't even know what to say about that one..."
+        },
+        {
+          "type": "Success",
+          "name": "Chair",
+          "route_to": "e-file3"
+        }
+      ]
+    },
+    "e-file3": {
+      "type": "Single",
+      "message": "You climbed onto the vent using the chair, there's only two ways, which way you want to go?",
+      "choices": [
+        {
+          "type": "Failure",
+          "name": "Left",
+          "message": "*Fell off the briefing room with many guards* Fatty"
+        },
+        {
+          "type": "Success",
+          "name": "Right",
+          "route_to": "e-file4"
+        }
+      ]
+    },
+    "e-file4": {
+      "type": "Single",
+      "message": "You successfully find a way out, unfortunately you are in the roof, but you seems to have tools to used, what tools you're going to use?",
+      "choices": [
+        {
+          "type": "Failure",
+          "name": "Rope",
+          "message": "*fell off to the rope* This seems awfully familiar..."
+        },
+        {
+          "type": "Failure",
+          "name": "Parachute",
+          "message": "I think that was just a regular backpack. See what happens when you assume?"
+        },
+        {
+          "type": "Success",
+          "name": "Plunger",
+          "route_to": "completed",
+          "award": "Sneaky Escapist"
+        },
+        {
+          "type": "Failure",
+          "name": "JetPack",
+          "message": "It takes many hours of Jetpack training before you're able to operate one"
+        }
+      ]
+    }
+  }
+}
